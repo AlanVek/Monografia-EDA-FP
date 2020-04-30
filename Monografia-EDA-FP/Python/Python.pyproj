@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>08deaddc-0ddf-428f-b533-64f8865b0ced</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FP-Python.py</StartupFile>
+    <StartupFile>HOF-Python.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FP-Python.py" />
+    <Compile Include="HOF-Python.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Value_Ref-Python.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

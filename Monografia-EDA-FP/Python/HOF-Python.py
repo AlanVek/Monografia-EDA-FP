@@ -1,11 +1,11 @@
-def apply (iter, func, inplace = False):
+def apply (itr, func, inplace = False):
     if inplace:
-        for i in range (len(iter)):
-            iter[i] = func(iter[i])
+        for i in range (len(itr)):
+            itr[i] = func(itr[i])
         return None
     else:
         itr2 = []
-        for value in iter:
+        for value in itr:
             itr2.append(func(value))
         return itr2
 

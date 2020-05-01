@@ -21,6 +21,9 @@
     <ClCompile Include="Value_Ref-C++.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fact_Recurs_C++.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Turn.h">

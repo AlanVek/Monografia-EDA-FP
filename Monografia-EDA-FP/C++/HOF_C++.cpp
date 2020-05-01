@@ -3,7 +3,7 @@
 #include <array>
 #include "Turn.h"
 
-#ifndef TURN
+#ifdef TURN2
 using namespace std;
 
 template <class T>

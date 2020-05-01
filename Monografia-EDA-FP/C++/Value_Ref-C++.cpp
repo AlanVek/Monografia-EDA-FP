@@ -3,7 +3,7 @@
 #include <vector>
 #include "Turn.h"
 
-#ifdef TURN
+#ifdef TURN1
 using namespace std;
 #define CANT 5
 #define TEST 5

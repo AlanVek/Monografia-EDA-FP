@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>08deaddc-0ddf-428f-b533-64f8865b0ced</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Comprehension.py</StartupFile>
+    <StartupFile>Functors.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Declarative.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Functors.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HOF-Python.py">

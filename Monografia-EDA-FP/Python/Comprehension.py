@@ -14,6 +14,5 @@ lista3 = [2*(i+1) for i in lista1]    #En una línea, se logró que lista3 = [2,
 
 my_func = lambda x: 2*(x+1)
 
-lista4 = [my_func(i) for i in lista1]   #Lista4 = [2,4,6,8,10]
-
+lista4 = [my_func(i) for i in lista1 ]   #Lista4 = [2,4,6,8,10]
 

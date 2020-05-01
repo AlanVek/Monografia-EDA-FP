@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>08deaddc-0ddf-428f-b533-64f8865b0ced</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>HOF-Python.py</StartupFile>
+    <StartupFile>Comprehension.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Comprehension.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Declarative.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="HOF-Python.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Python-Templates.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Value_Ref-Python.py" />

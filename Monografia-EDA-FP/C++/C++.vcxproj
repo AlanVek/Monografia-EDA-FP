@@ -141,6 +141,7 @@
     <ClCompile Include="C++_Lambda.cpp" />
     <ClCompile Include="Fact_Recurs_C++.cpp" />
     <ClCompile Include="HOF_C++.cpp" />
+    <ClCompile Include="Imperative.cpp" />
     <ClCompile Include="Value_Ref-C++.cpp" />
   </ItemGroup>
   <ItemGroup>

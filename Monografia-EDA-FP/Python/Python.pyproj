@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>08deaddc-0ddf-428f-b533-64f8865b0ced</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Functors.py</StartupFile>
+    <StartupFile>HOF-Python.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

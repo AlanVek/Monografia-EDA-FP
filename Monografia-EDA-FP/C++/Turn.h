@@ -2,4 +2,4 @@
 
 //#define TURN
 
-#define TURN7
+#define TURN2

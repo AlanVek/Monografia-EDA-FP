@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Declarative.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="HOF-Python.py">
       <SubType>Code</SubType>
     </Compile>

@@ -22,7 +22,7 @@ T apply_copy(const T& iter, const F& func) {
 }
 
 template<class T, typename F>
-void apply_inplace(T& iter, const F& func) {
+void apply(T& iter, const F& func) {
 	for (auto i = iter.begin(); i != iter.end(); i++)
 		*i = func(*i);
 }

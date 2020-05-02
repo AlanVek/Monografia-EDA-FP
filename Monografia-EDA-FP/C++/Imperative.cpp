@@ -7,7 +7,9 @@ using namespace std;
 
 int main() {
 	int value = 0;
-	auto func = [&value](auto& x) {		//Recibe por referencia a value. Equivalente, en este caso, a poner sólo &.
+
+	//Lambda que recibe por referencia a value. Equivalente, en este caso, a poner sólo &.
+	auto func = [&value](auto& x) {
 		cout << x << endl;
 		if (value)
 			x = x + x;
@@ -17,17 +19,17 @@ int main() {
 	string s = "Hola";
 	int num = 3;
 
-	auto res1 = func(num);	//Imprime 3 y devuelve 6.
+	/*Imprime 3.
+	res1 = 6. */
+	auto res1 = func(num);
 
+	//Modificar value modifica a func.
 	value = 1;
-	auto res2 = func(s);	//Imprime "Hola", modifica a s para que valga "HolaHola" y devuelve "HolaHolaHolaHola".
 
-	cout << "num is: " << num << endl;	//Imprime 3.
-
-	cout << "s is: " << s << endl;		//Imprime "HolaHola".
-
-	cout << "first result is: " << res1 << endl;	//Imprime 6.
-	cout << "second result is: " << res2 << endl;	//Imprime "HolaHolaHolaHola".
+	/*Imprime "Hola".
+	s = "HolaHola".
+	res2 = "HolaHolaHolaHola".*/
+	auto res2 = func(s);
 }
 
 #endif

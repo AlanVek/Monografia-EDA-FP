@@ -3,19 +3,25 @@
 #Devuelve x+x si x es entero o lista, o devuelve x en otro caso.
 func = lambda x: x+x if isinstance(x,int) or isinstance(x,list) else x    
 
+ #Imprime 2.
+print (func(1))
 
-print (func(1))                          #Imprime 2.
+#Imprime [1,2,3,1,2,3]
+print (func([1,2,3]))
 
-print (func([1,2,3]))                    #Imprime [1,2,3,1,2,3]
+#Imprime {'Hola' : 1, 'Chau' : 2}
+print (func({'Hola' : 1, 'Chau' : 2}))
 
-print (func({'Hola' : 1, 'Chau' : 2}))   #Imprime {'Hola' : 1, 'Chau' : 2}
+#Imprime range(0,5)
+print (func(range(5)))
 
-print (func(range(5)))                   #Imprime range(0,5)
+#Imprime "Hola"
+print (func("Hola"))                    
 
-print (func("Hola"))                     #Imprime "Hola"
+#Imprime 1.6
+print (func (1.6))                      
 
-print (func (1.6))                       #Imprime 1.6
-
-print (func(lambda x: x+1))              #Imprime <function<lambda>>
+#Imprime <function<lambda>>
+print (func(lambda x: x+1))             
 
 

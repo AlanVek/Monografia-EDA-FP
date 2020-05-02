@@ -44,17 +44,20 @@ auto print = [](const auto& iter) {for (auto x : iter)cout << x << ' '; cout << 
 int main() {
 	/*Función que recibe un parámetro y devuelve una función que recibe un parámetro
 	y devuelve la suma del parámetro nuevo y el original.*/
-	auto HOF = [](const auto& adder) {return [=](const auto& changeable) {return changeable + adder; }; };
+	auto HOF = [](const auto& adder) {return [&](const auto& changeable) {return changeable + adder; }; };
 
 	vector<int> v{ 1,2,3,4 };
 
 	int num = 1;
+	//v = {2,3,4,5}. Sumó 1.
 	auto increment = HOF(num);
+	apply(v, increment);
+	print(v);
 
-	apply(v, increment);		//v = {2,3,4,5}. Sumó 1.
 	num = 4;
-
-	apply(v, increment);		//v = {3,4,5,6}. Sumó 1, el valor no cambió porque num fue pasado por valor.
+	//v = {7,8,9,10}. Sumó 5.
+	apply(v, increment);
+	print(v);
 }
 
 #endif

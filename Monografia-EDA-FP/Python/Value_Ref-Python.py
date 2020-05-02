@@ -1,26 +1,33 @@
-n = 5
-test_value = 5
-v_lambdas = [lambda x: x+i for i in range (n)] #Cargamos la lista con las expresiones lambda.
+#Cargamos la lista con las expresiones lambda.
+v_lambdas = []
+for i in range (1,5):
+    v_lambdas.append(lambda x: x + i)
 
+#Imprime 9 9 9 9, porque i fue capturado del entorno por referencia.
 for lam in v_lambdas:
-    print (lam(test_value),end=' ') #Imprime siempre test_value + cant - 1, porque i fue capturado del entorno.
-print ('\n')
-
-#Equivalente...
-v_lambdas_2 = []
-for i in range (n):
-    v_lambdas_2.append(lambda x: x + i)
-
-for lam in v_lambdas_2:
-    print (lam(test_value), end = ' ') #Imprime siempre test_value + cant - 1, porque i fue capturado del entorno.
+    print (lam(5), end = ' ')
 
 print ('\n')
-
-#Además, de esta manera se puede modificar el valor de i, lo que afectaría a las funciones.
 
 i = 0
-for lam in v_lambdas_2:
-    print (lam(test_value), end = ' ') #Imprime siempre test_value, porque i fue capturado del entorno y ahora vale 0.
+
+#Imprime 5 5 5 5, porque el cambio de i afecta a las funciones.
+for lam in v_lambdas:
+    print (lam(5), end = ' ') 
 print ('\n')
+
+
+#def add1(num):
+#    return num + 1
+
+##v_function y v_lambda son [1,2,3,4]
+#v_function = list(range(1,5))
+#v_lambda = list(range(1,5))
+
+##v_function = [2,3,4,5]
+#v_function = list(map(add1,v_function))
+
+##v_lambda = [2,3,4,5]
+#v_lambda = list(map(lambda x: x+1,v_lambda))
 
 

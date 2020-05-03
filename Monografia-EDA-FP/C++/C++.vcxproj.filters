@@ -33,6 +33,15 @@
     <ClCompile Include="Functors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Comprensión.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Variadic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Bind.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Turn.h">

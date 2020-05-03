@@ -138,12 +138,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bind.cpp" />
     <ClCompile Include="C++_Lambda.cpp" />
+    <ClCompile Include="Comprensión.cpp" />
     <ClCompile Include="Fact_Recurs_C++.cpp" />
     <ClCompile Include="Functors.cpp" />
     <ClCompile Include="HOF_C++.cpp" />
     <ClCompile Include="Imperative.cpp" />
     <ClCompile Include="Value_Ref-C++.cpp" />
+    <ClCompile Include="Variadic.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Turn.h" />

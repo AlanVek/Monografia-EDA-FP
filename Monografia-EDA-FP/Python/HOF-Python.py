@@ -53,13 +53,41 @@
 #Recibe un parámetro y devuelve una función
 #que recibe otro parámetro y devuelve la suma
 #de ambos parámetros.
-HOF = lambda x: lambda y: x+y
+#HOF = lambda x: lambda y: x+y
 
-#Lista1 = [1,2,3,4]
-lista1 = list(range(1,5))
+##Lista1 = [1,2,3,4]
+#lista1 = list(range(1,5))
 
-#Lista1 = [2,3,4,5]. Sumó 1.
-lista1 = list(map(HOF(1),lista1))
+##Lista1 = [2,3,4,5]. Sumó 1.
+#lista1 = list(map(HOF(1),lista1))
 
-#Lista1 = [7,8,9,10]. Sumó 5.
-lista1 = list(map(HOF(5),lista1))
+##Lista1 = [7,8,9,10]. Sumó 5.
+#lista1 = list(map(HOF(5),lista1))
+
+from copy import deepcopy
+from math import sqrt
+
+#Recibe un valor y una serie de funciones y
+#devuelve el resultado de aplicarle sucesivamente 
+#las funciones a ese valor.
+def HOF (value, *args):
+    temp = deepcopy(value)
+    for func in args:
+        temp = func(temp)
+
+    return temp
+
+def squared(num):
+    return num**2
+
+num = 3
+
+#num2 = 3*2 + 6 = 12
+num2 = HOF(num,lambda x: x*2, lambda x: x+6)
+
+#num3 = (12/4)^2 + 12/4 = 12
+num3 = HOF(num2,lambda x: x/4, squared, lambda x: x + sqrt(x))
+
+
+print (num2)
+print (num3)
